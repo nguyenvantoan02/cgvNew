@@ -1,0 +1,585 @@
+@import 'variables';
+html {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+p {
+    margin-bottom: 0 !important;
+}
+.font {
+    font-family: 'Matemasie', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.container {
+    max-width: 1280px !important;
+}
+
+.cinema_list {
+    background-image: url('https://homepage.momocdn.net/img/momo-upload-api-230912110927-638301137672516955.jpeg');
+    background-repeat: repeat;
+    background-position: center;
+    background-size: cover;
+    height: 538px;
+    width: 100%;
+}
+.cinema_list2 {
+    background-color: #fff;
+    height: 538px;
+    width: 100%;
+}
+ul {
+    margin-bottom: 0 !important;
+    padding-left: 0 !important;
+}
+.header_main {
+    background: url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-top.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 135px;
+}
+//slider-list//
+.slider_main {
+    padding: 20px 0 30px 0;
+}
+.cinema_list {
+    position: relative;
+}
+.cinema_list2 {
+    position: relative;
+}
+.slider_container {
+    height: 380px;
+    transition: transform 0.2s ease;
+}
+.slider_container2 {
+    height: 380px;
+    transition: transform 0.2s ease;
+}
+.slider_main_list {
+    // height: 100%;
+    width: 1100px;
+    margin-top: 45px;
+    overflow: hidden;
+}
+.slider_box {
+    width: 20%;
+    list-style-type: none;
+    flex: 0 0 20%;
+    position: relative;
+}
+.slider_box > a {
+    text-decoration: none;
+    width: 92%;
+    // height: 90%;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.slider_box2 {
+    width: 20%;
+    list-style-type: none;
+    flex: 0 0 20%;
+    position: relative;
+}
+.slider_box2 > a {
+    text-decoration: none;
+    width: 92%;
+    // height: 90%;
+    display: block;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.heading {
+    position: absolute;
+    left: 668px;
+    z-index: 10;
+    margin-top: 40px;
+    font-size: 30px;
+}
+.img_main {
+    border-radius: 5px;
+    overflow: hidden;
+}
+.img {
+}
+.img:hover {
+    transform: scale(1.04);
+}
+.age {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    background-color: #e88021;
+    font-size: 12px;
+    padding: 2px 4px;
+    border-radius: 4px;
+}
+.index_icon_video {
+    position: absolute;
+    top: 104px;
+    left: 78px;
+    font-size: 50px;
+}
+.number {
+    position: absolute;
+    top: 245px;
+    left: 11px;
+    font-size: 44px;
+    font-weight: 500;
+}
+.name {
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 16px;
+    margin-bottom: 0;
+}
+.type {
+    margin-bottom: 0;
+}
+.bi-star-fill {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.star,
+.type,
+.name {
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.left-icon {
+    position: absolute;
+    top: 216px;
+    z-index: 10;
+    left: 191px;
+    padding: 6px 11px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.right-icon {
+    position: absolute;
+    top: 216px;
+    z-index: 10;
+    right: 191px;
+    padding: 6px 11px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+}
+.left-icon2 {
+    position: absolute;
+    top: 216px;
+    z-index: 10;
+    left: 191px;
+    padding: 6px 11px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 2px #333;
+}
+.right-icon2 {
+    position: absolute;
+    top: 216px;
+    z-index: 10;
+    right: 191px;
+    padding: 6px 11px;
+    font-size: 20px;
+    font-weight: 600;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    box-shadow: 0 0 2px #333;
+}
+
+//tìm kiếm
+.bi-search {
+    cursor: pointer;
+    display: block;
+    padding: 6px;
+    width: 100%;
+    position: relative;
+}
+.box_infor_search {
+    position: absolute;
+    height: auto;
+    right: 122px;
+    left: -160px;
+    top: 40px;
+    z-index: 20;
+    border-radius: 6px;
+    box-shadow: 0 0 1px #444;
+    display: none;
+}
+.input_search {
+    padding: 4px 6px;
+    outline-color: #e71a0f;
+    position: relative;
+    border-radius: 6px;
+    border: none;
+}
+.input_button {
+    padding: 4px;
+    border: none;
+}
+
+.search_information_list {
+    width: 94% !important;
+    margin: auto;
+    margin-top: 10px;
+    height: 312px;
+    overflow: scroll;
+    overflow-x: hidden;
+    padding-bottom: 10px;
+}
+.box_infor_search::before {
+    content: '';
+    border-width: 14px;
+    border-style: solid;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+    border-bottom-color: #fff;
+    position: absolute;
+    top: -26px;
+    right: 21px;
+}
+
+.search_main {
+    border: 1px solid #ccc;
+    width: 94% !important;
+    margin: auto;
+    margin-top: 10px;
+    border-radius: 6px;
+}
+.child_infor_title {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.child_infor_type {
+    font-size: 13px;
+}
+.child_infor_star {
+    font-size: 13px;
+    margin-top: 6px;
+}
+.child_infor_status {
+    font-size: 10px;
+    padding: 3px 4px;
+    border-radius: 6px;
+    margin-top: 6px;
+    margin-left: 6px;
+}
+.child_infor {
+    margin: 6px 0 6px 12px;
+}
+.search_information_child {
+    margin-top: 4px;
+    text-decoration: none;
+}
+.up {
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 15;
+    display: none;
+}
+//footer
+footer {
+    height: auto;
+}
+.footer_list_tt {
+    background-color: #e88021;
+}
+
+.tt_1 {
+    width: 100%;
+    padding: 30px 0;
+    border-bottom: 2px solid #333;
+    border-top: 2px solid #333;
+    background-color: #fdfcf0;
+}
+
+.tt_2 {
+    width: 100%;
+    padding: 30px 0;
+    background-color: #fdfcf0;
+}
+.tt_1_1 {
+    width: 70%;
+}
+.tt_2_2 {
+    width: 70%;
+}
+.footer_social > i {
+    font-size: 30px;
+    margin-right: 4px;
+}
+.tt_3 {
+    background-image: url('https://www.cgv.vn/skin/frontend/cgv/default/images/bg-cgv/bg-bottom-footer.jpg');
+    background-repeat: repeat;
+    background-size: contain;
+    background-position: center;
+    width: 100%;
+    height: 114px;
+}
+body {
+    background-color: #fdfcf0 !important;
+}
+
+//user-form
+.form_handle {
+    height: 800px;
+}
+.form_template {
+    margin: auto;
+    box-shadow: 0 0 1px #555;
+    width: 34%;
+    padding: 20px;
+    border-radius: 4px;
+    margin-top: 50px;
+}
+.heading_form {
+    text-align: center;
+    background-color: #e71a0f;
+    padding: 8px 0;
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+label {
+    font-weight: 500;
+}
+label > i {
+    margin-right: 4px;
+}
+.width_select {
+    min-width: 100px;
+    min-height: 30px;
+}
+.gt {
+    margin-left: 25px;
+    width: 120px;
+}
+.button_redirect {
+    margin-top: 40px;
+}
+.button_redirect > button {
+    width: 60%;
+    background-color: #e71a0f;
+    font-weight: 500;
+}
+.button_redirect > button:hover {
+    background-color: #e56963;
+}
+
+//detail
+.detail_main_info {
+    height: 480px;
+    margin-top: 50px;
+    background-image: url('https://cinema.momocdn.net/img/53203902591862249-Untitled-1.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.info_img {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.info_img > img {
+    width: 50%;
+    height: 365px;
+    position: relative;
+}
+.detail_icon_video {
+    position: absolute;
+    font-size: 60px;
+    left: 350px;
+    top: 400px;
+}
+.info_info {
+    background-color: rgba(0, 0, 0, 0.9);
+}
+
+.info_name {
+    font-size: 32px;
+}
+.infor_box {
+    z-index: 20;
+    margin-left: 50px;
+    height: 368px;
+}
+.info_name2 {
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-right: 15px;
+}
+.info_name-year-time {
+    opacity: 0.6;
+}
+.info_evaluate {
+    margin: 10px 0;
+}
+.info_year_movie {
+    margin-right: 15px;
+}
+.info_evaluate_star {
+    color: #ffdb0d;
+    font-size: 20px;
+}
+.see_more {
+    color: #ffdb0d;
+    cursor: pointer;
+}
+.hidden {
+    color: #ffdb0d;
+    cursor: pointer;
+    display: none;
+}
+.info_type {
+    margin-left: 25px;
+}
+.info_content {
+    margin-bottom: 10px;
+}
+.info_trailer {
+    margin-top: 10px;
+    cursor: pointer;
+    width: 120px;
+}
+.detail_comment-listMovie {
+    height: auto;
+}
+.detail_buy {
+    margin: 40px 0 20px 0;
+}
+.date_child_box {
+    width: 70%;
+    cursor: pointer;
+}
+.date_child {
+    list-style: none;
+}
+.show_date-address {
+    box-shadow: 0 0 1px #333;
+    padding: 20px 0;
+}
+
+.list_show_date > .date_child {
+    display: flex;
+    justify-content: center;
+}
+.box_day {
+    font-size: 12px;
+    opacity: 0.7;
+}
+.name_cgv {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-top: 0.5px solid #ccc;
+    border-bottom: 0.5px solid #ccc;
+}
+.name_cgv > img {
+}
+.name_cgv_img {
+    box-shadow: 0 0 1px #555;
+    width: 52px;
+    height: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px 0 16px;
+    border-radius: 4px;
+}
+.time_child {
+    list-style: none;
+    cursor: pointer;
+}
+.comment {
+    height: 400px;
+}
+
+////model
+.model_detail {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 20;
+    display: none;
+}
+.model_detail_box {
+    height: 85%;
+    width: 769px;
+    border-radius: 5px;
+    position: relative;
+}
+.model_detail_box > iframe {
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    width: 100%;
+}
+.model_buy {
+    height: auto;
+    padding: 10px;
+}
+.model_buy_info_text {
+    height: 47px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+}
+.model_button {
+    padding: 4px 15px;
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 5px;
+}
+.model_button:hover {
+    opacity: 0.8;
+}
+.model_icon_close {
+    position: absolute;
+    top: -14px;
+    right: -10px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 28px;
+}
+
+//ADMIN
+
+.content_data {
+    height: 500px;
+}
+.sidebar {
+    height: 500px;
+}
+.content_admin_main {
+    height: auto;
+}
+
+.admin_manager {
+    position: relative;
+}
+
+.admin_select_option {
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
